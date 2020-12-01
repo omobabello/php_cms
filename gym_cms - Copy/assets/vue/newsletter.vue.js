@@ -1,0 +1,1 @@
+var app=new Vue({el:"#app",data:{subs:""},methods:{extract(){axios.post("http://localhost/gym_cms/index.php/ExportNewsLetter").then(t=>{this.subs=t.data})}},mounted(){$("#table").DataTable()}});
